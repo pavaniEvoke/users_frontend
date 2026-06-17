@@ -9,7 +9,7 @@ export default function UsersList(){
   useEffect(()=>{
     const fetchUsers = async ()=>{
       try{
-        const res = await axios.get('http://localhost:5000/api/users')
+        const res = await axios.get('http://100.30.240.91:5000/api/users')
         setUsers(res.data)
       }catch(err){
         setError('Failed to load users')
